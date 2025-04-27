@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const navItems = [
     ["Home", "MainSection"],        // Matches the id="MainSection" in JSX
-    ["Service", "Service"],         // Matches the id="Service" in JSX
+    ["Service", "service"],         // Matches the id="Service" in JSX
     ["Client", "ClientSection"],    // Matches the id="ClientSection" in JSX
     ["Contact", "ContactSection"],  // Matches the id="ContactSection" in JSX
     ["Impact", "ImpactSection"],   // Matches the id="ImpactSection" in JSX
