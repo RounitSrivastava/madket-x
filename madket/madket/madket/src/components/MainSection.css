@@ -7,11 +7,6 @@
     flex-direction: column;
     align-items: center;
   }
-  .brand-logo-img {
-    width: 40px; /* Adjust size as needed */
-    height: auto;
-    object-fit: contain;
-  }
   
   .brand-logo {
     display: flex;

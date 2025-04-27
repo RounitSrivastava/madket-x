@@ -1,48 +1,86 @@
 .section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 80px;
-    background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background: black;
+  flex-wrap: wrap; /* Allow content to wrap in smaller screens */
+}
+
+.left {
+  flex: 1;
+}
+
+.navbar-logo {
+  width: 23px; /* Adjust logo size as needed */
+  height: auto;
+  margin-right: 10px; /* Space between logo and text */
+}
+.left h4 {
+  font-size: 18px;
+  color: #ffff00;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.left h1 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 18px;
+  color: white;
+  line-height: 1.6;
+}
+
+.right {
+  flex: 1;
+  text-align: center;
+}
+
+.kiit-logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.incubated-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Media Queries for small screens */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 30px 20px; /* Reduced padding for small screens */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center the content */
   }
-  
-  .left {
-    flex: 1;
-  }
-  
-  .left h4 {
-    font-size: 18px;
-    color: #ffff00;
-    margin-bottom: 10px;
-    font-weight: 600;
-  }
-  
-  .left h1 {
-    font-size: 36px;
-    color: white;
-    margin-bottom: 20px;
-  }
-  
-  .left p {
-    font-size: 18px;
-    color: white;
-    line-height: 1.6;
-  }
-  
+
+  .left,
   .right {
     flex: 1;
-    text-align: center;
+    width: 100%; /* Allow the sections to take full width */
+    margin-bottom: 20px; /* Add some spacing between sections */
+    text-align: center; /* Center align text */
   }
-  
+
+  .left h1 {
+    font-size: 28px; /* Adjust font size for better fit */
+  }
+
+  .left p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
   .kiit-logo {
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 15px;
+    max-width: 150px; /* Reduce logo size on smaller screens */
   }
-  
+
   .incubated-text {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
+    font-size: 18px; /* Slightly smaller text on mobile */
   }
-  
+}
