@@ -74,10 +74,9 @@ const Service = () => {
     threshold: 0.2,
     triggerOnce: false,
   });
-  
 
   return (
-    <section id="service" className="services-section" ref={ref}>
+    <section id="Service" className="services-section" ref={ref}>
       <motion.h1
         className="services-heading"
         variants={fadeInUp}
