@@ -80,11 +80,11 @@
 
 /* Scrolling animations */
 .scroll-right {
-  animation: scrollRight 18s linear infinite;
+  animation: scrollRight 16s linear infinite;
 }
 
 .scroll-left {
-  animation: scrollLeft 18s linear infinite;
+  animation: scrollLeft 16s linear infinite;
 }
 
 @keyframes scrollRight {

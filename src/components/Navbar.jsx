@@ -1,29 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { FaLinkedin, FaFacebook, FaTumblr, FaYoutube, FaBars, FaInstagram, FaWhatsapp, FaTwitter } from "react-icons/fa";
 import "./Navbar.css";
+import logo from "../assets/photo_2025-04-27_11-46-07-removebg-preview.png"; // Adjust the path to your actual logo location
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const navItems = [
-    ["Home", "MainSection"],        // Matches the id="MainSection" in JSX
-    ["Service", "Service"],         // Matches the id="Service" in JSX
-    ["Client", "ClientSection"],    // Matches the id="ClientSection" in JSX
-    ["Contact", "ContactSection"],  // Matches the id="ContactSection" in JSX
-    ["Impact", "ImpactSection"],   // Matches the id="ImpactSection" in JSX
+    ["Home", "MainSection"],
+    ["Service", "service"],
+    ["Client", "ClientSection"],
+    ["Contact", "ContactSection"],
+    ["Impact", "ImpactSection"],
   ];
 
-  // Function to scroll to a section
   const scrollTo = (targetId) => {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
-    setMenuOpen(false); // Close menu after clicking (for mobile)
+    setMenuOpen(false);
   };
 
-  // Handle window resize to toggle mobile view
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -48,8 +47,11 @@ const Navbar = () => {
 
       {/* Navbar Container */}
       <div className="navbar-container">
-        {/* Logo */}
-        <div className="logo">Madket</div>
+        {/* Logo and Brand Name */}
+        <div className="logo">
+          <img src={logo} alt="Logo" className="navbar-logo" /> {/* Logo */}
+          <span>Madket</span> {/* Brand Name */}
+        </div>
 
         {/* Desktop Navigation (Hidden on Small Screens) */}
         {!isMobile && (
@@ -79,7 +81,6 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-        {/* Close Button Inside Popup - Bigger & Right Aligned */}
         <button className="close-button" onClick={() => setMenuOpen(false)}>✖</button>
         <ul>
           {navItems.map((item, index) => (

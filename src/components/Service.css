@@ -1,7 +1,7 @@
 .services-section {
     text-align: center;
     padding: 60px 20px;
-    background: black
+    background: black,
     background-size: 400% 400%;
     animation: backgroundShift 10s ease infinite;
     color: white;
@@ -78,4 +78,3 @@
   .service-card:active {
     background-color: rgba(255, 255, 255, 0.3); /* Even lighter when clicked */
   }
-  
