@@ -1,0 +1,81 @@
+.services-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: black
+    background-size: 400% 400%;
+    animation: backgroundShift 10s ease infinite;
+    color: white;
+  }
+  
+  @keyframes backgroundShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .services-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .highlight {
+    color:#ffff00; /* Keep highlight as black */
+  }
+  
+  .services-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #b0b0b0;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .service-card {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    color: white; /* Keep text color white */
+  }
+  
+  .service-card:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten only the background on hover */
+    transform: scale(1.05);
+  }
+  
+  .icon-wrapper {
+    font-size: 3rem;
+    color: #ffff00; /* Yellow icons */
+    margin-bottom: 10px;
+  }
+  
+  .service-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    color: #fff; /* Keep text color white */
+  }
+  
+  .service-card:active {
+    background-color: rgba(255, 255, 255, 0.3); /* Even lighter when clicked */
+  }
+  

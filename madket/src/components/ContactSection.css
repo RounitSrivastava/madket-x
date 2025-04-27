@@ -1,0 +1,138 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    background: black
+    color: #dfee5e;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .left-section h4 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+  .left-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffff00;
+    margin-bottom: 2rem;
+  }
+  
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .icons svg {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .icons svg:hover {
+    transform: scale(1.1);
+  }
+  
+  .right-section {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .right-section h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 1.2rem;
+    padding: 0.5rem 0;
+  }
+  
+  .form-group svg {
+    margin-right: 0.8rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+   /* glow button  submit*/
+
+   .submit-glow-btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s ease;
+  }
+  
+  .submit-glow-btn::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, yellow, black);
+    z-index: -1;
+    border-radius: 6px;
+  }
+  
+  .submit-glow-btn::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: #2f1e00;
+    z-index: -1;
+    border-radius: 2px;
+  }
+  
+  .submit-glow-btn:hover {
+    background-color: rgba(0, 227, 255, 0.1);
+  }
+  
+  .arrow {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .submit-glow-btn:hover .arrow {
+    transform: translateX(5px);
+  }
+  
+  
