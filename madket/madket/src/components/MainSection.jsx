@@ -1,15 +1,11 @@
 import React from "react";
 import "./MainSection.css";
-import logo from "../assets/photo_2025-04-27_11-46-07-removebg-preview.png"; // Adjust path to your actual logo location
 
 const MainSection = () => {
   return (
     <section id="MainSection" className="main-container">
       <div className="brand-logo">
         <div className="circle" />
-        {/* Logo Image */}
-        <img src={logo} alt="Brand Logo" className="brand-logo-img" />
-        {/* Brand Name */}
         <span className="brand-name">
           MaDket
           <span className="fx"></span>

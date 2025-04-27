@@ -1,0 +1,48 @@
+.impact-section {
+    padding: 60px 20px;
+    background: black;
+    text-align: center;
+  }
+  
+  .impact-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffff00;
+    margin-bottom: 40px;
+  }
+  
+  .impact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .impact-card {
+    flex: 1 1 150px;
+    max-width: 200px;
+  }
+  
+  .impact-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .impact-label {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #d9d6d6;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .impact-grid {
+      gap: 20px;
+    }
+  
+    .impact-card {
+      max-width: 150px;
+    }
+  }
+  
