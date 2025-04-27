@@ -1,0 +1,48 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    background: black;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .left h4 {
+    font-size: 18px;
+    color: #ffff00;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .left h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .left p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  .right {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .kiit-logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .incubated-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
