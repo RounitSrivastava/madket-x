@@ -11,6 +11,11 @@
   flex: 1;
 }
 
+.navbar-logo {
+  width: 23px; /* Adjust logo size as needed */
+  height: auto;
+  margin-right: 10px; /* Space between logo and text */
+}
 .left h4 {
   font-size: 18px;
   color: #ffff00;
