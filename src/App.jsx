@@ -1,6 +1,6 @@
 import  Navbar from './components/Navbar';
 import MainSection from './components/MainSection'; 
-import Service from './components/service';
+import Service from './components/Service';
 import ClientsSection from './components/ClientsSection';
 import ContactSection from './components/ContactSection';
 import ImpactSection from './components/ImpactSection';
