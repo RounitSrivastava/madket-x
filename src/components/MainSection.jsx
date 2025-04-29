@@ -17,14 +17,14 @@ const MainSection = () => {
       </div>
 
       <div className="content">
-        <h1>
+        <h2>
 We at MaDket are your ultimate friends for all things 
           <br />
           <span className="highlight">marketing!</span>{" "}
           <em>
           Run by a team of passionate marketing enthusiasts, we curate and create content to inspire, educate, and empower fellow marketers. Whether you're a seasoned professional or just starting your journey in the world of marketing, join us as we explore the latest trends, strategies, and insights to help you thrive in this ever-evolving industry
           </em>
-        </h1>
+        </h2>
         <h3>
         <p>
         Let's dive into the exciting world of marketing together! 
