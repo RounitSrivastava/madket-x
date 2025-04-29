@@ -24,14 +24,14 @@ const Footer = () => {
         <div className="footer-column">
           <h2>Location</h2>
           <ul>
-            <li>Odisha, India</li>
+            <li>KIIT-TBI,Bhubaneswar</li>
           </ul>
         </div>
 
         <div className="footer-contacts">
           <h2>Contacts</h2>
           <h4>
-            <p>📞 +91 9304004546</p>
+            <p>📞 +91 7974947976</p>
             <p>✉ madket04@gmail.com</p>
             <p>📍 Bhubaneswar, Odisha, India</p>
           </h4>

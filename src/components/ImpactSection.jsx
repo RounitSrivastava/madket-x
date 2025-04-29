@@ -4,12 +4,12 @@ import { useInView } from "react-intersection-observer";
 import "./ImpactSection.css";
 
 const impactData = [
-  { number: 100, label: "Startup Supported" },
-  { number: 200, label: "Influencer Marketing" },
-  { number: 70, label: "Web-Services" },
-  { number: 50, label: "Mentors Engaged" },
-  { number: 120, label: "SEO" },
-  { number: 80, label: "Startups" },
+  { number: 10, label: "Startup Supported" },
+  { number: 20, label: "Influencer Marketing" },
+  { number: 13, label: "Web-Services" },
+  { number: 10, label: "Mentors Engaged" },
+  { number: 10, label: "SEO" },
+  { number: 15, label: "Startups" },
 ];
 
 const ImpactSection = () => {

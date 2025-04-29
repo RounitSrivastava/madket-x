@@ -18,20 +18,20 @@ const MainSection = () => {
 
       <div className="content">
         <h1>
-          For brands aiming to scale their business, we deliver impactful digital solutions,
+We at MaDket are your ultimate friends for all things 
           <br />
-          <span className="highlight">From marketing</span>{" "}
+          <span className="highlight">marketing!</span>{" "}
           <em>
-            strategy to SEO, SMM, web development, and influencer marketing — we bring the
-            best minds to your brand
+          Run by a team of passionate marketing enthusiasts, we curate and create content to inspire, educate, and empower fellow marketers. Whether you're a seasoned professional or just starting your journey in the world of marketing, join us as we explore the latest trends, strategies, and insights to help you thrive in this ever-evolving industry
           </em>
         </h1>
+        <h3>
         <p>
-          With a strong foundation in influencer marketing, we've empowered over 100 brands
-          through <b>500+ successful campaigns</b> leveraging a vibrant network of{' '}
+        Let's dive into the exciting world of marketing together! 
+        {/* <b>500+ successful campaigns</b> leveraging a vibrant network of{' '}
           <b>100+ influencers</b> and a skilled team driving results across SEO, SMM, web
-          development, and digital strategy.
-        </p>
+          development, and digital strategy. */}
+        </p> </h3>
       </div>
     </section>
   );

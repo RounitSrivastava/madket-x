@@ -1,19 +1,20 @@
 import React from "react";
 import "./ContactSection.css";
-import { FaInstagram, FaLinkedin, FaUser, FaBuilding, FaEnvelope, FaPhone, FaCommentDots } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaUser, FaBuilding, FaEnvelope, FaPhone, FaCommentDots, FaTwitter } from "react-icons/fa";
 
 const ContactSection = () => {
   return (
     <div className="contact-container" id="ContactSection">
       <div className="left-section">
         <h4>TAKE THE ROAD TO</h4>
-        <h1>Digitizing Your Business
+        <h1>Digitalizing Your Business
           <div></div> Growth</h1>
         <div className="socials">
           <span>Follow Us</span>
           <div className="icons">
             <a href="https://www.instagram.com/madket04?igsh=OGh5dzI4dnZ6Z2px" className="social-icon"><FaInstagram /></a>
              <a href="https://www.linkedin.com/in/madket-%E2%80%8E-28ba20307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="social-icon"><FaLinkedin/></a>
+             <a href="https://x.com/madket04?s=21" className="social-icon"><FaTwitter/></a>
           </div>
         </div>
       </div>

@@ -39,9 +39,9 @@ const ClientsSection = () => {
     <section id="ClientSection" className="clients-section">
       <div className="clients-header">
         <p className="small-heading">CLIENTS ACROSS INDUSTRIES</p>
-        <h1 className="main-heading">Web and Digital Marketing Agency</h1>
+        <h1 className="main-heading">Web and Digital Marketing Services</h1>
         <p className="sub-heading">
-          From startups to 150+ growing businesses,
+          From startups to 15+ growing businesses,
           <br />
           <span>we create custom solutions that grow brands online</span>
         </p>
