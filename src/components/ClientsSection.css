@@ -37,14 +37,41 @@
   flex-direction: column;
   gap: 30px;
   overflow: hidden;
+  width: 100%;
 }
 
 .logos-row {
   display: flex;
-  gap: 30px;
   flex-wrap: nowrap;
-  white-space: nowrap;
+  gap: 30px;
+  min-width: 200%; /* Important for smooth loop */
   align-items: center;
+}
+
+.scroll-right {
+  animation: scrollRight 40s linear infinite;
+}
+
+.scroll-left {
+  animation: scrollLeft 40s linear infinite;
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .client-card {
@@ -55,6 +82,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
   transition: all 0.3s ease;
 }
 
@@ -76,31 +104,4 @@
 .client-card:hover {
   background: rgb(61, 61, 60);
   transform: scale(1.05);
-}
-
-/* Scrolling animations */
-.scroll-right {
-  animation: scrollRight 16s linear infinite;
-}
-
-.scroll-left {
-  animation: scrollLeft 16s linear infinite;
-}
-
-@keyframes scrollRight {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }
