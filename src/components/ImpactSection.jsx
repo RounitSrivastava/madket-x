@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import "./ImpactSection.css";
 
 const impactData = [
@@ -12,9 +13,26 @@ const impactData = [
   { number: 15, label: "Startups" },
 ];
 
+// Animation variants
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      when: "beforeChildren",
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
 const ImpactSection = () => {
   const { ref, inView } = useInView({
-    triggerOnce: false, // important: false, to restart when re-enter
+    triggerOnce: false,
     threshold: 0.2,
   });
 
@@ -29,11 +47,23 @@ const ImpactSection = () => {
   }, [inView]);
 
   return (
-    <section id="ImpactSection" className="impact-section" ref={ref}>
+    <motion.section
+      id="ImpactSection"
+      className="impact-section"
+      ref={ref}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.3 }}
+      variants={containerVariants}
+    >
       <h2 className="impact-title">IMPACT</h2>
       <div className="impact-grid">
         {impactData.map((item, index) => (
-          <div className="impact-card" key={index}>
+          <motion.div
+            className="impact-card"
+            key={index}
+            variants={cardVariants}
+          >
             <h3 className="impact-number">
               {startCounting ? (
                 <CountUp
@@ -47,10 +77,10 @@ const ImpactSection = () => {
               )}
             </h3>
             <p className="impact-label">{item.label}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

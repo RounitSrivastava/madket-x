@@ -49,11 +49,11 @@
 }
 
 .scroll-right {
-  animation: scrollRight 40s linear infinite;
+  animation: scrollRight 34s linear infinite;
 }
 
 .scroll-left {
-  animation: scrollLeft 40s linear infinite;
+  animation: scrollLeft 34s linear infinite;
 }
 
 @keyframes scrollRight {
@@ -83,7 +83,7 @@
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .client-logo {

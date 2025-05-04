@@ -12,10 +12,15 @@ import Footer from './components/Footer';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
+  const handleFinishLoading = () => {
+    console.log('Loading finished');
+    setIsLoading(false); // This will trigger the change to hide the loading screen and show the main content
+  };
+
   return (
     <>
       {isLoading ? (
-        <LoadingScreen onFinish={() => setIsLoading(false)} />
+        <LoadingScreen onFinish={handleFinishLoading} />
       ) : (
         <>
           <Navbar />

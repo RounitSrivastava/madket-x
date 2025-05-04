@@ -6,7 +6,6 @@ const LoadingScreen = ({ onFinish }) => {
     const timer = setTimeout(() => {
       onFinish(); // Notify parent to hide loader
     }, 4000); // 4 seconds total
-
     return () => clearTimeout(timer);
   }, [onFinish]);
 
@@ -18,7 +17,7 @@ const LoadingScreen = ({ onFinish }) => {
         <span className="loading-text">&nbsp;Achieve</span>
       </div>
     </div>
-  );
-};
-
-export default LoadingScreen;
+      );
+    };
+    
+    export default LoadingScreen;
