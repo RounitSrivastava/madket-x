@@ -17,7 +17,7 @@ body {
   position: fixed; /* Fixed navbar */
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Transparent background */
+  background: rgba(0, 0, 0, 0.5); /* Transparent background */
   padding: 10px 30px;
   display: flex;
   flex-direction: column;
