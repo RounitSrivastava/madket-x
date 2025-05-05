@@ -1,15 +1,15 @@
 .loading-screen {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align to top */
+  align-items: flex-start; /* Default: align to top */
   height: 100dvh;
   background-color: black;
-  padding-top: 100px; /* Space from top edge */
+  padding-top: 130px; /* Space from top edge */
   box-sizing: border-box;
 }
 
 .loading-container {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   text-align: center;
@@ -23,4 +23,15 @@
 
 .loading-text.fade-in {
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .loading-screen {
+    align-items: flex-start; /* Center vertically */
+    padding-top: 130px;      /* Remove top padding */
+  }
+
+  .loading-container {
+    font-size: 2rem;
+  }
 }
