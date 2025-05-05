@@ -28,7 +28,7 @@
 @media (max-width: 600px) {
   .loading-screen {
     align-items: flex-start; /* Center vertically */
-    padding-top: 130px;      /* Remove top padding */
+    padding-top:140px;      /* Remove top padding */
   }
 
   .loading-container {
